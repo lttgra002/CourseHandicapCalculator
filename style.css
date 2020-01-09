@@ -1,0 +1,146 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  /* margin-left: 40px;
+  margin-right: 40px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 80px 500px;
+  grid-column-gap: 16px;
+  justify-items: center; */
+  
+}
+
+/*Nav Bar*/
+
+.navBar{
+  display: grid;
+  grid-template-columns: 1;
+  box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  justify-items: center;
+  background-color: #009688;
+  color: white;
+}
+
+h1{
+  padding: 10px;
+  margin: 0px;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+/*=========Form============*/
+
+.containerWrapper{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 16px;
+  margin-left: 40px;
+  margin-right: 40px;
+  justify-items: center;
+}
+
+.formContainer{
+  grid-column: 5 / 9;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 1;
+  align-content: start;
+}
+
+.buttonDiv{
+  justify-self: end;
+}
+
+/*==========Inputs========*/
+
+input{
+  grid-column: 1;
+  padding: 0;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.ehcp, .slope, .cr, .par{
+  padding: 10px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom-color: #BDBDBD; 
+}
+
+.ehcp:focus, .slope:focus, .cr:focus, .par:focus{
+  border-bottom-color: #009688;
+}
+
+.error{
+  font-size: 10px;
+  color: red;
+}
+
+/*Buttons*/
+
+.submitButton, .restartButton{
+  border: none;
+  border-radius: 3px;
+  background-color: #009688;
+  color: white;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.resetButton{
+  border:0; 
+  background: white;
+  color: #009688;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.submitButton:active{
+  outline: none;
+}
+
+/*Removes the little arrows*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+  -moz-appearance:textfield; /* Firefox */
+}
+
+label{
+  grid-column: 1;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-top: 20px;
+  color: #212121;
+}
+
+
+/*Restart*/
+
+.handicapDiv{
+  grid-column: 5 / 9;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 32px;
+  color: #009688;
+}
+
+.restartButton{
+  grid-column: 5 / 9;
+}
+
+.yourHcp{
+  grid-column: 5 / 9;
+}
